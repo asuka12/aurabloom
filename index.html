@@ -19,7 +19,7 @@
 <h1>นโยบายความเป็นส่วนตัวของ AuraBloom</h1>
 <p class="muted">มีผลตั้งแต่ 22 พฤศจิกายน 2569 · ฉบับภาษาอังกฤษอยู่ด้านล่าง</p>
 
-<p>AuraBloom เป็นแอปอ่านโหงวเฮ้งและดวงรายวันเพื่อความบันเทิง ไม่มีระบบสมาชิก ข้อมูลส่วนใหญ่ประมวลผลในเครื่อง ส่วนข้อมูลการใช้งานจะส่งไปยังผู้ให้บริการวิเคราะห์เฉพาะเมื่อคุณอนุญาต</p>
+<p>AuraBloom เป็นแอปอ่านโหงวเฮ้งและดวงรายวันเพื่อความบันเทิง ไม่มีบัญชีผู้ใช้ มีการสมัครสมาชิกแบบไม่บังคับผ่าน App Store ข้อมูลส่วนใหญ่ประมวลผลในเครื่อง ส่วนข้อมูลการใช้งานจะส่งไปยังผู้ให้บริการวิเคราะห์เฉพาะเมื่อคุณอนุญาต</p>
 
 <h2>ข้อมูลที่แอปใช้</h2>
 <ul>
@@ -37,20 +37,25 @@
   <li>ไม่ส่งรูปหรือวันเกิดของคุณออกจากเครื่อง</li>
   <li>ไม่มีโฆษณา ไม่ติดตามคุณข้ามแอปหรือเว็บไซต์ และไม่ขายข้อมูล</li>
   <li>ไม่มีบัญชีผู้ใช้และไม่เก็บชื่อ อีเมล หรือเบอร์โทร</li>
+  <li>ไม่เก็บข้อมูลบัตรหรือการชำระเงิน</li>
 </ul>
+
+<h2>การสมัครสมาชิกและการซื้อ</h2>
+<p>การชำระเงินทั้งหมดทำผ่าน Apple แอปไม่เห็นและไม่เก็บข้อมูลบัตรหรือข้อมูลการชำระเงินของคุณ เราใช้ RevenueCat (RevenueCat, Inc. สหรัฐอเมริกา) ตรวจสอบสถานะสมาชิกและกู้คืนการซื้อ แอปเชื่อมต่อ RevenueCat เฉพาะเมื่อคุณเปิดหน้าแพ็กเกจ กดกู้คืนการซื้อ หรือเป็นสมาชิกอยู่ เมื่อเชื่อมต่อ RevenueCat จะได้รับรหัสสุ่มที่ RevenueCat สร้างขึ้น (ไม่ใช่ชื่อหรืออีเมล) ข้อมูลการซื้อจาก App Store (แพ็กเกจ วันที่ซื้อและวันหมดอายุ ราคาและสกุลเงิน ประเทศของสโตร์) ข้อมูลเครื่องเชิงเทคนิค (รุ่นเครื่อง เวอร์ชันระบบและแอป ภาษา) และที่อยู่ IP ระหว่างเชื่อมต่อ เราใช้ข้อมูลนี้เพื่อให้สิทธิ์สมาชิกทำงานเท่านั้น ไม่ใช้โฆษณา ไม่ขาย และไม่เชื่อมกับข้อมูลการใช้งานใน PostHog แอปเก็บสถานะสมาชิกล่าสุดไว้ในเครื่องเพื่อแสดงผลได้ทันทีและเมื่อออฟไลน์ การลบแอปหรือลบข้อมูลในแอปไม่ได้ยกเลิกการสมัคร ยกเลิกได้ที่ ตั้งค่า &gt; Apple ID &gt; การสมัครรับ ถ้าต้องการให้ลบข้อมูลการซื้อที่ RevenueCat ติดต่อเราตามช่องทางด้านล่าง (Apple เก็บประวัติการซื้อตามนโยบายของ Apple)</p>
 
 <h2>บริการของบุคคลที่สาม</h2>
 <p>การตรวจจับใบหน้าใช้ Google ML Kit ซึ่งทำงานในเครื่อง ตามข้อกำหนดของ Google ไลบรารีนี้อาจส่งข้อมูลการใช้งานเชิงเทคนิค เช่น ประสิทธิภาพและข้อผิดพลาด ไปยัง Google โดยไม่รวมรูปภาพของคุณ ดูรายละเอียดได้ที่ <a href="https://developers.google.com/ml-kit/terms">ML Kit Terms</a></p>
 <p>ข้อมูลการใช้งาน (เมื่อคุณอนุญาต) ส่งไปยัง PostHog ตามหัวข้อด้านบน</p>
+<p>Apple (App Store) และ RevenueCat สำหรับการสมัครสมาชิก ตามหัวข้อการสมัครสมาชิกและการซื้อ</p>
 
 <h2>การลบข้อมูล</h2>
-<p>ไปที่ ตั้งค่า แล้วเลือก "ลบข้อมูลทั้งหมด" ข้อมูลทุกอย่างของแอปในเครื่องจะถูกลบ การลบข้อมูลทั้งหมดในแอปจะหยุดส่งข้อมูลการใช้งานและล้างรหัสสุ่มด้วย หรือลบแอปออกจากเครื่องก็จะลบข้อมูลทั้งหมดในเครื่องเช่นกัน</p>
+<p>ไปที่ ตั้งค่า แล้วเลือก "ลบข้อมูลทั้งหมด" ข้อมูลทุกอย่างของแอปในเครื่องจะถูกลบ การลบข้อมูลทั้งหมดในแอปจะหยุดส่งข้อมูลการใช้งานและล้างรหัสสุ่มด้วย หรือลบแอปออกจากเครื่องก็จะลบข้อมูลทั้งหมดในเครื่องเช่นกัน การลบข้อมูลในแอปไม่ได้ยกเลิกการสมัครสมาชิก</p>
 
 <h2>เด็ก</h2>
 <p>แอปนี้ไม่ได้ออกแบบสำหรับเด็กอายุต่ำกว่า 13 ปี</p>
 
 <h2>การเปลี่ยนแปลง</h2>
-<p>ถ้าแอปเปลี่ยนวิธีใช้หรือส่งข้อมูล เราจะปรับปรุงหน้านี้พร้อมวันที่มีผล และขอความยินยอมจากคุณก่อนถ้ามีข้อมูลใหม่ที่ต้องส่งออกนอกเครื่อง</p>
+<p>ถ้าแอปเปลี่ยนวิธีใช้หรือส่งข้อมูล เราจะปรับปรุงหน้านี้พร้อมวันที่มีผล และขอความยินยอมจากคุณก่อนถ้ามีข้อมูลใหม่ที่ต้องส่งออกนอกเครื่องเพื่อวัตถุประสงค์อื่นนอกเหนือจากบริการที่คุณขอ (เช่น การซื้อ)</p>
 
 <h2>ติดต่อ</h2>
 <p>แจ้งคำถามหรือขอให้ลบข้อมูลได้ที่ <a href="mailto:kittanutc@gmail.com">kittanutc@gmail.com</a> หรือ <a href="https://github.com/asuka12/aurabloom/issues">github.com/asuka12/aurabloom/issues</a></p>
@@ -59,7 +64,7 @@
 
 <h1>AuraBloom Privacy Policy</h1>
 <p class="muted">Effective 22 November 2026</p>
-<p>AuraBloom is an entertainment app for Chinese face reading and daily fortune. It has no accounts. Most data is processed on your device; usage data is sent to an analytics provider only if you allow it.</p>
+<p>AuraBloom is an entertainment app for Chinese face reading and daily fortune. It has no user accounts. An optional subscription is available through the App Store. Most data is processed on your device; usage data is sent to an analytics provider only if you allow it.</p>
 <h2>Data the app uses</h2>
 <ul>
   <li><b>Face photos from the camera</b> are used only to measure facial proportions on your device. The app does not keep the photos and never uploads them.</li>
@@ -74,16 +79,20 @@
   <li>We don't send your photos or birth date off the device.</li>
   <li>No ads, no cross-app or cross-site tracking, no sale of data.</li>
   <li>No user accounts; we don't collect your name, email or phone number.</li>
+  <li>We don't store card or payment details.</li>
 </ul>
+<h2>Subscriptions and purchases</h2>
+<p>All payments are handled by Apple; the app never sees or stores your card or payment details. We use RevenueCat (RevenueCat, Inc., USA) to check your subscription status and restore purchases. The app connects to RevenueCat only when you open the plans screen, tap Restore purchases, or have an active subscription. When it connects, RevenueCat receives a random ID it generates (not your name or email), App Store purchase information (plan, purchase and expiry dates, price and currency, storefront country), technical device information (model, OS and app version, language) and your IP address during the connection. We use this only to provide your subscription, never for advertising; we don't sell it and we don't link it to PostHog usage data. The app keeps your latest subscription status on the device so it can show it immediately and offline. Deleting the app or its data does not cancel your subscription; cancel in Settings &gt; Apple ID &gt; Subscriptions. To have purchase data held by RevenueCat deleted, contact us below (Apple keeps purchase history under its own policy).</p>
 <h2>Third-party services</h2>
 <p>Face detection uses Google ML Kit, which runs on the device. Under Google's terms the library may send technical usage information (such as performance and errors) to Google, not including your images. See the <a href="https://developers.google.com/ml-kit/terms">ML Kit Terms</a>.</p>
 <p>Usage data (only if you allow it) is sent to PostHog as described above.</p>
+<p>Apple (App Store) and RevenueCat for subscriptions, as described under Subscriptions and purchases.</p>
 <h2>Deleting your data</h2>
-<p>Go to Settings and choose "ลบข้อมูลทั้งหมด" (Delete all data). Deleting all data in the app also stops sending usage data and clears the random ID. Deleting the app also removes all data on the device.</p>
+<p>Go to Settings and choose "ลบข้อมูลทั้งหมด" (Delete all data). Deleting all data in the app also stops sending usage data and clears the random ID. Deleting the app also removes all data on the device. Deleting data in the app does not cancel a subscription.</p>
 <h2>Children</h2>
 <p>The app is not designed for children under 13.</p>
 <h2>Changes</h2>
-<p>If the app changes how it uses or sends data, we will update this page with a new effective date, and ask for your consent first if new data needs to leave your device.</p>
+<p>If the app changes how it uses or sends data, we will update this page with a new effective date, and ask for your consent first if new data needs to leave your device for any purpose other than a service you request (such as a purchase).</p>
 <h2>Contact</h2>
 <p>Questions or requests: <a href="mailto:kittanutc@gmail.com">kittanutc@gmail.com</a> or <a href="https://github.com/asuka12/aurabloom/issues">github.com/asuka12/aurabloom/issues</a></p>
 </main></body>
