@@ -17,17 +17,20 @@
 </head>
 <body><main>
 <h1>นโยบายความเป็นส่วนตัวของ AuraBloom</h1>
-<p class="muted">มีผลตั้งแต่ 20 พฤศจิกายน 2569 · ฉบับภาษาอังกฤษอยู่ด้านล่าง</p>
+<p class="muted">มีผลตั้งแต่ 22 พฤศจิกายน 2569 · ฉบับภาษาอังกฤษอยู่ด้านล่าง</p>
 
-<p>AuraBloom เป็นแอปอ่านโหงวเฮ้งและดวงรายวันเพื่อความบันเทิง แอปออกแบบให้ประมวลผลในเครื่องของคุณ ไม่มีระบบสมาชิก และไม่มีเซิร์ฟเวอร์ของเราที่เก็บข้อมูลคุณ</p>
+<p>AuraBloom เป็นแอปอ่านโหงวเฮ้งและดวงรายวันเพื่อความบันเทิง ไม่มีระบบสมาชิก ข้อมูลส่วนใหญ่ประมวลผลในเครื่อง ส่วนข้อมูลการใช้งานจะส่งไปยังผู้ให้บริการวิเคราะห์เฉพาะเมื่อคุณอนุญาต</p>
 
 <h2>ข้อมูลที่แอปใช้</h2>
 <ul>
-  <li><b>รูปใบหน้าจากกล้อง</b> ใช้วัดสัดส่วนใบหน้าในเครื่องเท่านั้น ไม่ถูกส่งขึ้นอินเทอร์เน็ต แอปจะเก็บรูปไว้ในเครื่องก็ต่อเมื่อคุณเปิดตัวเลือกบันทึกรูปเอง และลบได้ทุกเมื่อในหน้าตั้งค่า</li>
+  <li><b>รูปใบหน้าจากกล้อง</b> ใช้วัดสัดส่วนใบหน้าในเครื่องเท่านั้น แอปไม่บันทึกรูปไว้และไม่ส่งขึ้นอินเทอร์เน็ต</li>
   <li><b>ผลการวัดและประวัติการสแกน</b> (ตัวเลขสัดส่วน ไม่ใช่รูป) เก็บในพื้นที่เก็บข้อมูลแบบเข้ารหัสของเครื่อง</li>
   <li><b>วันเกิด</b> ถ้าคุณกรอก ใช้คำนวณดวงรายวัน สีมงคล วันชง และฤกษ์ เก็บในเครื่องแบบเข้ารหัส</li>
   <li><b>การตั้งค่าแจ้งเตือน</b> แจ้งเตือนทั้งหมดตั้งเวลาในเครื่อง (local notification) ไม่มีการส่งผ่านเซิร์ฟเวอร์</li>
 </ul>
+
+<h2>ข้อมูลการใช้งาน (เมื่อคุณอนุญาตเท่านั้น)</h2>
+<p>ถ้าคุณเลือกอนุญาต แอปจะส่งข้อมูลการใช้งานแบบไม่ระบุตัวตนไปยัง PostHog ซึ่งเก็บข้อมูลบนเซิร์ฟเวอร์ในภูมิภาคสหภาพยุโรป ได้แก่ หน้าที่เปิด ปุ่มและตัวเลือกที่แตะ (เช่น กิจกรรมที่เลือกในหน้าหาฤกษ์) ผลการสแกนว่าผ่านหรือไม่และสาเหตุทางเทคนิค การเปิดปิดแจ้งเตือนและชั่วโมงที่ตั้ง มีวันเกิดบันทึกไว้หรือไม่ (ไม่ใช่ตัววันเกิด) การเปิดและปิดแอป รุ่นเครื่อง เวอร์ชันระบบและแอป ภาษาและเขตเวลาของเครื่อง ขนาดหน้าจอ และรหัสสุ่มของการติดตั้ง ไม่รวมรูป จุดบนใบหน้า ตัวเลขสัดส่วน วันเกิด คะแนน คำทำนาย ชื่อ หรืออีเมล เราใช้ข้อมูลนี้เพื่อปรับปรุงแอปเท่านั้น ไม่ใช้เพื่อโฆษณาและไม่ขาย การส่งข้อมูลผ่านอินเทอร์เน็ตทำให้ผู้ให้บริการเห็นที่อยู่ IP ระหว่างรับข้อมูล เราตั้งค่าไม่ให้เก็บ IP และไม่เติมตำแหน่งจาก IP ถอนความยินยอมได้ทุกเมื่อที่ ตั้งค่า &gt; ข้อมูลการใช้งาน ข้อมูลที่ส่งไปแล้วเก็บไว้ประมาณ 1 ปี แล้วผู้ให้บริการจะลบอัตโนมัติในรอบลบรายเดือน (อาจค้างอยู่ได้อีกไม่เกินราว 2 เดือน) ถ้าต้องการให้ลบข้อมูลที่ส่งไปแล้ว ติดต่อเราตามช่องทางด้านล่าง</p>
 
 <h2>สิ่งที่เราไม่ทำ</h2>
 <ul>
@@ -38,31 +41,34 @@
 
 <h2>บริการของบุคคลที่สาม</h2>
 <p>การตรวจจับใบหน้าใช้ Google ML Kit ซึ่งทำงานในเครื่อง ตามข้อกำหนดของ Google ไลบรารีนี้อาจส่งข้อมูลการใช้งานเชิงเทคนิค เช่น ประสิทธิภาพและข้อผิดพลาด ไปยัง Google โดยไม่รวมรูปภาพของคุณ ดูรายละเอียดได้ที่ <a href="https://developers.google.com/ml-kit/terms">ML Kit Terms</a></p>
+<p>ข้อมูลการใช้งาน (เมื่อคุณอนุญาต) ส่งไปยัง PostHog ตามหัวข้อด้านบน</p>
 
 <h2>การลบข้อมูล</h2>
-<p>ไปที่ ตั้งค่า แล้วเลือก "ลบข้อมูลทั้งหมด" ข้อมูลทุกอย่างของแอปในเครื่องจะถูกลบ หรือลบแอปออกจากเครื่องก็จะลบข้อมูลทั้งหมดเช่นกัน</p>
+<p>ไปที่ ตั้งค่า แล้วเลือก "ลบข้อมูลทั้งหมด" ข้อมูลทุกอย่างของแอปในเครื่องจะถูกลบ การลบข้อมูลทั้งหมดในแอปจะหยุดส่งข้อมูลการใช้งานและล้างรหัสสุ่มด้วย หรือลบแอปออกจากเครื่องก็จะลบข้อมูลทั้งหมดในเครื่องเช่นกัน</p>
 
 <h2>เด็ก</h2>
 <p>แอปนี้ไม่ได้ออกแบบสำหรับเด็กอายุต่ำกว่า 13 ปี</p>
 
 <h2>การเปลี่ยนแปลง</h2>
-<p>ถ้าในอนาคตแอปมีฟีเจอร์ที่ต้องส่งข้อมูลออกนอกเครื่อง เราจะขอความยินยอมจากคุณก่อน และจะปรับปรุงหน้านี้พร้อมวันที่มีผล</p>
+<p>ถ้าแอปเปลี่ยนวิธีใช้หรือส่งข้อมูล เราจะปรับปรุงหน้านี้พร้อมวันที่มีผล และขอความยินยอมจากคุณก่อนถ้ามีข้อมูลใหม่ที่ต้องส่งออกนอกเครื่อง</p>
 
 <h2>ติดต่อ</h2>
-<p>แจ้งคำถามหรือขอให้ลบข้อมูลได้ที่ <a href="https://github.com/asuka12/aurabloom/issues">github.com/asuka12/aurabloom/issues</a></p>
+<p>แจ้งคำถามหรือขอให้ลบข้อมูลได้ที่ <a href="mailto:kittanutc@gmail.com">kittanutc@gmail.com</a> หรือ <a href="https://github.com/asuka12/aurabloom/issues">github.com/asuka12/aurabloom/issues</a></p>
 
 <hr>
 
 <h1>AuraBloom Privacy Policy</h1>
-<p class="muted">Effective 20 November 2026</p>
-<p>AuraBloom is an entertainment app for Chinese face reading and daily fortune. It processes data on your device, has no accounts, and we run no server that stores your data.</p>
+<p class="muted">Effective 22 November 2026</p>
+<p>AuraBloom is an entertainment app for Chinese face reading and daily fortune. It has no accounts. Most data is processed on your device; usage data is sent to an analytics provider only if you allow it.</p>
 <h2>Data the app uses</h2>
 <ul>
-  <li><b>Face photos from the camera</b> are used only to measure facial proportions on your device and are never uploaded. A photo is kept on the device only if you turn on photo saving, and you can delete it any time in Settings.</li>
+  <li><b>Face photos from the camera</b> are used only to measure facial proportions on your device. The app does not keep the photos and never uploads them.</li>
   <li><b>Measurements and scan history</b> (numbers, not photos) are kept in the device's encrypted storage.</li>
   <li><b>Birth date</b>, if you enter it, is used to calculate the daily reading, lucky colours, clash days and auspicious dates, and is kept in encrypted storage on the device.</li>
   <li><b>Notification settings</b>: all notifications are scheduled locally on the device; nothing goes through a server.</li>
 </ul>
+<h2>Usage data (only if you allow it)</h2>
+<p>If you choose to allow it, the app sends anonymous usage data to PostHog, which stores it on servers in the European Union region: the screens you open, the buttons and options you tap (for example the activity chosen on the auspicious-dates screen), whether a scan succeeded and the technical reason if not, turning notifications on or off and the hour set, whether a birth date is saved (not the date itself), app opens and closes, the device model, OS and app version, device language and time zone, screen size, and a random installation ID. It does not include photos, face points, proportion measurements, birth date, scores, readings, name or email. We use this data only to improve the app, never for advertising, and we don't sell it. Sending data over the internet lets the provider see your IP address while receiving it; we have set the service not to store IP addresses and not to derive location from them. You can withdraw consent at any time in Settings &gt; ข้อมูลการใช้งาน (Usage data). Data already sent is kept for about one year and is then deleted automatically in the provider's monthly cleanup (it may remain for up to about two more months). To have data already sent deleted, contact us at the email address below.</p>
 <h2>What we don't do</h2>
 <ul>
   <li>We don't send your photos or birth date off the device.</li>
@@ -71,13 +77,14 @@
 </ul>
 <h2>Third-party services</h2>
 <p>Face detection uses Google ML Kit, which runs on the device. Under Google's terms the library may send technical usage information (such as performance and errors) to Google, not including your images. See the <a href="https://developers.google.com/ml-kit/terms">ML Kit Terms</a>.</p>
+<p>Usage data (only if you allow it) is sent to PostHog as described above.</p>
 <h2>Deleting your data</h2>
-<p>Go to Settings and choose "ลบข้อมูลทั้งหมด" (Delete all data), or delete the app.</p>
+<p>Go to Settings and choose "ลบข้อมูลทั้งหมด" (Delete all data). Deleting all data in the app also stops sending usage data and clears the random ID. Deleting the app also removes all data on the device.</p>
 <h2>Children</h2>
 <p>The app is not designed for children under 13.</p>
 <h2>Changes</h2>
-<p>If a future feature needs to send data off the device, we will ask for your consent first and update this page with a new effective date.</p>
+<p>If the app changes how it uses or sends data, we will update this page with a new effective date, and ask for your consent first if new data needs to leave your device.</p>
 <h2>Contact</h2>
-<p>Questions or requests: <a href="https://github.com/asuka12/aurabloom/issues">github.com/asuka12/aurabloom/issues</a></p>
+<p>Questions or requests: <a href="mailto:kittanutc@gmail.com">kittanutc@gmail.com</a> or <a href="https://github.com/asuka12/aurabloom/issues">github.com/asuka12/aurabloom/issues</a></p>
 </main></body>
 </html>
